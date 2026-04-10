@@ -1,0 +1,57 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# CDK
+cdk.out/
+.cdk.staging/
+node_modules/
+*.js
+!jest.config.js
+*.d.ts
+.aws-sam/
+
+# CDKTF
+cdktf.out/
+.gen/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
+coverage/
+
+# Secrets (never commit)
+*.pem
+*.key
+secrets/
+.secrets/
