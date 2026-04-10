@@ -1,0 +1,14 @@
+# Architecture Notes
+
+## Overview
+
+The stack provisions DynamoDB Global Tables across us-east-1 and eu-central-1 in active-active mode, with Lambda functions in both regions behind Route53 weighted routing records that gradually shift traffic percentages during each migration phase [from-code]. S3 buckets in both regions use cross-region replication rules scoped to specific prefixes and capped at objects under 1GB, preventing runaway replication costs on large blobs [from-code]. CloudFront sits in front with origin failover groups — static assets are cached normally while transaction API paths carry Cache-Control bypass headers — and EventBridge handles cross-region event fan-out with deduplication keys and exponential backoff on the target invocation [from-code]. A Step Functions state machine orchestrates the phase progression with manual approval gates modeled as task tokens, so no critical cutover step fires without a human sign-off recorded in SSM Parameter Store [from-code]. The combination of Route53 TTL bleed-through, Global Tables eventual consistency windows, and EventBridge deduplication IDs creates a narrow but real consistency gap in the 72 hours immediately post-cutover — the architecture is individually defensible service by service, but the interaction between these three systems is where compliance-visible data loss actually occurs [inferred].
+
+## Key Decisions
+
+- DynamoDB Global Tables eventual consistency means a Lambda in eu-central-1 can read a stale transaction record written milliseconds ago in us-east-1 — acceptable for read-heavy dashboards, catastrophic for idempotency checks on payment debit operations [inferred]
+- Route53 weighted routing shifts traffic at the DNS TTL boundary, not instantaneously — a 60s TTL means up to 60s of mixed-region traffic during any weight change, which complicates distributed tracing correlation [from-code]
+- S3 CRR with a 1GB object size filter requires a Lambda-backed replication rule or S3 Batch Replication for objects that arrived before replication was enabled — the stack provisions forward-only replication, so historical data backfill is a separate runbook step [inferred]
+- CloudFront origin failover triggers only on 5xx or connection timeout from the primary origin — a silent data consistency failure (200 with stale data) will not trigger failover, making the health check Lambda critical but easy to misconfigure [inferred]
+- Step Functions task token approval gates have a 1-year max timeout — any approval workflow relying on email-based SNS approval that gets lost in spam will stall the state machine silently until someone checks the console [editorial]
+- RemovalPolicy.DESTROY on DynamoDB Global Tables in CDK v2 will attempt to delete the table and all replicas on stack teardown — in a production account this is a one-way door with no soft-delete safety net [from-code]
