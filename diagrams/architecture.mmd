@@ -1,0 +1,19 @@
+graph TD
+    subgraph AWS["AWS Cloud"]
+        DDB[(DynamoDB)]
+        RDS[(RDS)]
+        S3[(S3)]
+        CF[CloudFront]
+        EB[EventBridge]
+        SF[Step Functions]
+        R53[Route 53]
+    end
+
+    Lambda --> DDB
+    DDB --> RDS
+    RDS --> S3
+    S3 --> CF
+    CF --> EB
+    EB --> SF
+    SF --> R53
+    RDS -.->|metrics| CW[CloudWatch]
