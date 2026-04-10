@@ -1,0 +1,133 @@
+═══════════════════════════════════════════════════════════════════════════════
+                        INFRATALES OPEN SOURCE LICENSE
+                              Version 1.0, 2024
+═══════════════════════════════════════════════════════════════════════════════
+
+Copyright (c) 2024-2025 Rahul Ladumor / InfraTales
+All Rights Reserved.
+
+https://infratales.com
+https://github.com/InfraTales
+
+═══════════════════════════════════════════════════════════════════════════════
+                              GRANT OF LICENSE
+═══════════════════════════════════════════════════════════════════════════════
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+copy, modify, merge, publish, and distribute the Software, subject to the
+following conditions:
+
+═══════════════════════════════════════════════════════════════════════════════
+                         MANDATORY ATTRIBUTION TERMS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. ATTRIBUTION REQUIREMENT
+   All copies, forks, or derivative works MUST retain:
+
+   a) This complete license file without modification
+   b) The original NOTICE file with author information
+   c) All copyright notices in source code headers
+   d) The following attribution in the README or main documentation:
+
+      "Originally created by Rahul Ladumor / InfraTales
+       https://github.com/InfraTales
+       https://infratales.com"
+
+2. NO REMOVAL OF BRANDING
+   The following elements MUST NOT be removed or altered:
+
+   a) InfraTales branding in code comments and headers
+   b) Author attribution (Rahul Ladumor)
+   c) Original repository links
+   d) Copyright notices
+   e) Any embedded signatures or watermarks
+
+3. DERIVATIVE WORKS
+   Any derivative work or fork MUST:
+
+   a) Clearly state it is derived from InfraTales
+   b) Link to the original InfraTales repository
+   c) Not imply original authorship or ownership
+   d) Include "Based on InfraTales by Rahul Ladumor" prominently
+
+4. COMMERCIAL USE
+   Commercial use is permitted PROVIDED THAT:
+
+   a) All attribution requirements above are met
+   b) InfraTales branding is not removed
+   c) The work is not sold as if it were original work
+   d) Credit is given in any commercial documentation
+
+═══════════════════════════════════════════════════════════════════════════════
+                            PROHIBITED ACTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+The following actions are STRICTLY PROHIBITED:
+
+1. Removing or obscuring the InfraTales name, branding, or attribution
+2. Claiming original authorship of this work
+3. Removing copyright notices or license files
+4. Removing embedded signatures or watermarks
+5. Implying endorsement by InfraTales without permission
+6. Using the InfraTales trademark in a misleading manner
+7. Distributing without this license attached
+
+═══════════════════════════════════════════════════════════════════════════════
+                              TRADEMARK NOTICE
+═══════════════════════════════════════════════════════════════════════════════
+
+"InfraTales" is a trademark of Rahul Ladumor.
+
+The InfraTales name, logo, and branding may not be used to endorse or promote
+products derived from this software without prior written permission.
+
+═══════════════════════════════════════════════════════════════════════════════
+                         VERIFICATION & AUTHENTICITY
+═══════════════════════════════════════════════════════════════════════════════
+
+Original Repository: https://github.com/InfraTales/aws-cdk-multi-region-fintech-migration-phased-cutover-with
+Author Verification: https://github.com/rahulladumor
+Website: https://infratales.com
+
+To verify authenticity, compare with the original InfraTales repository.
+Signed releases are available with GPG key: rahul.ladumor@infratales.com
+
+═══════════════════════════════════════════════════════════════════════════════
+                               ENFORCEMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+Violation of these terms will result in:
+
+1. Automatic termination of this license
+2. DMCA takedown requests on GitHub and other platforms
+3. Legal action for trademark infringement
+4. Public disclosure of license violations
+
+Report violations to: legal@infratales.com
+
+═══════════════════════════════════════════════════════════════════════════════
+                               DISCLAIMER
+═══════════════════════════════════════════════════════════════════════════════
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+═══════════════════════════════════════════════════════════════════════════════
+                              CONTACT
+═══════════════════════════════════════════════════════════════════════════════
+
+Author:     Rahul Ladumor
+Email:      rahul.ladumor@infratales.com
+Legal:      legal@infratales.com
+Security:   security@infratales.com
+Website:    https://infratales.com
+GitHub:     https://github.com/InfraTales
+LinkedIn:   https://linkedin.com/in/rahulladumor
+
+═══════════════════════════════════════════════════════════════════════════════
