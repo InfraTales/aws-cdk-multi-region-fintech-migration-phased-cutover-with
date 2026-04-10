@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/orgs/InfraTales/discussions
+    about: Ask questions and discuss ideas
+  - name: 📚 Documentation
+    url: https://infratales.com/docs
+    about: Read our documentation
+  - name: 🌐 Website
+    url: https://infratales.com
+    about: Visit our website
