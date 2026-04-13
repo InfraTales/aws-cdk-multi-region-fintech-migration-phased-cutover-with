@@ -1,0 +1,35 @@
+{
+  "platform": "cdk",
+  "language": "typescript",
+  "complexity": "expert",
+  "turn_type": "single",
+  "po_id": "101000346",
+  "team": "5",
+  "startedAt": "2025-11-03T08:04:07.946Z",
+  "subtask": "Provisioning of Infrastructure Environments",
+  "subject_labels": [
+    "Cloud Environment Setup"
+  ],
+  "aws_services": [
+    "DynamoDB",
+    "S3",
+    "Lambda",
+    "EventBridge",
+    "CloudWatch",
+    "CloudFront",
+    "Route53",
+    "SNS",
+    "SSM",
+    "SQS",
+    "StepFunctions",
+    "X-Ray",
+    "IAM"
+  ],
+  "training_quality": 9,
+  "coverage": {
+    "lines": 100,
+    "branches": 100
+  },
+  "author": "barun-turing",
+  "dockerS3Location": ""
+}
